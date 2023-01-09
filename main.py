@@ -1,5 +1,6 @@
 nome = input('Digite seu nome: ')
 idade = input('Digite sua idade: ')
+test = 'test'
 
 if nome != '' and idade != '':
     print(f'Seu nome eh {nome}')
