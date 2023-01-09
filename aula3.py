@@ -1,6 +1,16 @@
+# III XXX CCC MMM
+# IV IX
+# # V 
+# X
+# XL XC
+# D
+# CM
+
+
+
 numero_romano = input('Digite um numero romano: ')
 numero_inteiro = 0
-indice = 1
+indice = 0
 
 if numero_romano.isdigit() == False:
     
@@ -13,14 +23,7 @@ if numero_romano.isdigit() == False:
 
         indice = indice +1
 
-        # III XXX CCC MMM
-        # IV IX
-        # V 
-        # X
-        # XL XC
-        # D
-        # CM
-
+        
 
 
 
