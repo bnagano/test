@@ -10,6 +10,12 @@ if numero_romano.isdigit() == False:
         for i in range(0,len(duplo)):
             numero_romano = numero_romano.replace(duplo, "") 
         numero_inteiro += 900
+
+    if "CD" in numero_romano:
+                duplo = "CD"
+                for i in range(0,len(duplo)):
+                    numero_romano = numero_romano.replace(duplo, "") 
+                numero_inteiro += 400
     
     if "XC" in numero_romano:
         duplo = "XC"
