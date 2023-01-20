@@ -1,4 +1,16 @@
-cpf = input("Digite um cpf: ") #"74682489070"
+import re
+import sys
+entrada = input("Digite um cpf: ")
+cpf = re.sub(
+    r'[^0-9]', '', entrada    
+)
+
+primeiro_char_repetido = entrada == entrada[0] * len(entrada)
+
+if primeiro_char_repetido:
+    print("Voce digitou dados sequenciais! ")
+    sys.exit()
+
 multiplicador1 = 10
 multiplicador2 = 11
 cpf_novo = cpf[:9]
