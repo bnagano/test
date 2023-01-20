@@ -21,5 +21,4 @@ while True:
                 for indice, nome in enumerate(lista_compras):
                     print(indice, nome)
         else:
-
             print("Digite uma opção valida!")
