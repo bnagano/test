@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-<body>
-
 <?php
-echo "My first PHP script!";
-?>
+function test(){
+    $colors = array("red", "green", "blue", "yellow"); 
 
-</body>
-</html>
+    foreach ($colors as $value) {
+    echo "$value <br>";
+    }
+}
+test()
+?>
