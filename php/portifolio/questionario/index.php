@@ -10,7 +10,7 @@
 
 <?php
     if(isset($_POST['acao'])){
-        $respostas = array('1', '1', '1');
+        $respostas = array('1', '1', '1','1');
         $pontuacao = 0;
         $index = 0;
         foreach($_POST as $key => $value){
@@ -68,6 +68,25 @@
             <input type="radio" name="pergunta3" value="0"><span>0,1,2,3,4,5,6,7,8,9</span>
             <br />
             <input type="radio" name="pergunta3" value="0"><span>0,1,2,3,4,5,6,7,8,9,</span>
+            <br />
+        <hr>
+        <p>4. O PHP é uma linguagem de script, open source, amplamente utilizada por diversos 
+            desenvolvedores, podendo ser embutida dentro de códigos HTML, muito utilizados na 
+            construção de sites. Sobre essa linguagem, marque V para as afirmativas verdadeiras e F para as falsas.<p>
+
+            ( ) Comentários de linha são precedidos dos caracteres -- enquanto comentários de bloco são demarcados pelo conjunto de caracteres /* */.<br />
+            ( ) Tags curtas como, por exemplo, podem ser desabilitadas através da diretiva short_open_tag no arquivo de configuração php.ini.<br />
+            ( ) As funções call_user_func() e usort() não permitem a utilização de funções de callback definidas pelo usuário como parâmetro.<br />
+            ( ) O PHP não obriga a definição explícita de tipo na declaração de variáveis, já que é determinado pelo contexto em que ela é utilizada.<p>
+            <input type="radio" name="pergunta3" value="0"><span>V, V, F, F.</span>
+            <br />
+            <input type="radio" name="pergunta3" value="0"><span>V, F, V, F.</span>
+            <br />
+            <input type="radio" name="pergunta3" value="1"><span>F, V, F, V.</span>
+            <br />
+            <input type="radio" name="pergunta3" value="0"><span>F, F, V, V.</span>
+            <br />
+            <input type="radio" name="pergunta3" value="0"><span>F, F, F, V.</span>
             <br />
         <hr>
         <input type="submit" name="acao" value="Enviar!">
